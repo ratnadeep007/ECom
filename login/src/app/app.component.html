@@ -1,0 +1,25 @@
+<div class="container" ng-app="myApp">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header">
+        <h1>{{ title }}</h1>
+        <div class="style">
+          {{ title_text }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+      <div class="form-group">
+          <i>{{loginText}}</i>
+          <a class="btn btn-primary" (click)="toggle()">{{tabValue}}</a>
+      </div>
+      <div *ngIf="!isReplyFromTab" class="clogin"><login></login></div>
+      <div *ngIf="isReplyFromTab" class="cregister"><register></register></div>
+  </div>
+  <!--
+  <div class="col-md-8">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi veritatis excepturi impedit quisquam laudantium cum praesentium. Vel neque pariatur, ut tempore modi accusantium possimus mollitia rerum, excepturi quisquam nostrum eaque iste. Aliquam a optio, sunt maxime beatae repellendus ea voluptate accusamus facilis! Ratione accusamus doloremque dolores tempora, iste ipsum modi nulla quibusdam provident nostrum magnam aperiam aliquid facere doloribus architecto minima explicabo voluptate aspernatur, expedita amet, quasi blanditiis deserunt exercitationem enim. Voluptatem modi dolor pariatur quo, labore similique recusandae iusto repudiandae, illum iure, enim sequi? Iure itaque voluptatem quasi tenetur ea odit sunt quas ex, aperiam vero iste repudiandae officiis.
+  </div> -->
+</div>
+<br/>
